@@ -8,7 +8,7 @@ resource "azurerm_storage_account" "frontend" {
 }
 
 resource "azurerm_storage_account_static_website" "frontend" {
-  storage_account_id = azurerm_storage_account.frontend-storage.id
+  storage_account_id = azurerm_storage_account.frontend.id
   error_404_document = "404.html"
   index_document     = "index.html"
 }
