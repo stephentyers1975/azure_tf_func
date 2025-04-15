@@ -5,9 +5,10 @@ resource "azurerm_storage_account" "frontend" {
   location                 = azurerm_resource_group.main.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
+}
 
-  static_website {
-    index_document     = "index.html"
-    error_404_document = "404.html"
-  }
+resource "azurerm_storage_account_static_website" "frontend-web" {
+  storage_account_id = azurerm_storage_account.frontend.id
+  error_404_document = "404.html"
+  index_document     = "index.html"
 }
