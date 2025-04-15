@@ -1,0 +1,8 @@
+{
+    "azureFunctions.deploySubpath": "src/dotnet/backend/FleetAPI/bin/Release/net6.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectSubpath": "src/dotnet/backend/FleetAPI",
+    "azureFunctions.preDeployTask": "publish (functions)"
+}
