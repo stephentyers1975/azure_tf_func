@@ -7,8 +7,8 @@ resource "azurerm_storage_account" "frontend" {
   account_replication_type = "LRS"
 }
 
-resource "azurerm_storage_account_static_website" "frontend-web" {
-  storage_account_id = azurerm_storage_account.frontend.id
+resource "azurerm_storage_account_static_website" "frontend" {
+  storage_account_id = azurerm_storage_account.frontend-storage.id
   error_404_document = "404.html"
   index_document     = "index.html"
 }
