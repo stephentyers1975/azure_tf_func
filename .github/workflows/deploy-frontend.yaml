@@ -9,7 +9,7 @@ on:
         required: true
 
 env:
-  DOTNET_VERSION: '6.0.401' # The .NET SDK version to use
+  DOTNET_VERSION: '7.0' # The .NET SDK version to use
   DOTNET_WORKING_DIRECTORY: "./src/dotnet/frontend/FleetPortal"
 
 jobs:
